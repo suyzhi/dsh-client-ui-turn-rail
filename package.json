@@ -1,0 +1,19 @@
+{
+  "name": "@deepseek-ai/dsh-client-ui-turn-rail",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Conversation turn navigation rail for the dsh web client: a vertical marker strip on the conversation's right edge; click a dot to jump to that turn's start.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": { "default": "./lib/index.js" },
+    "./client": { "default": "./lib/client.js" },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}
